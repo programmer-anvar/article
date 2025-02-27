@@ -1,0 +1,1 @@
+export const logo = 'https://media1.thehungryjpeg.com/thumbs2/ori_3656345_ykrqulvid8kmquzhy86g3sjunvdqvsc4z8r7ppkk_monogram-at-logo-design.jpg'

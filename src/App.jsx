@@ -1,13 +1,15 @@
-import { useSelector } from "react-redux"
-import Counter from "./components/Counter"
-
+import { Route, Routes } from "react-router-dom"
+import { Login, Main, Navbar, Register } from "./components"
 function App() {
-  const state = useSelector(state => state.count)
   return (
     <>
       <div className='container'>
-           <h1>Counter: {state}</h1>   
-           <Counter />
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+        </Routes>
       </div>
     </>
   )
